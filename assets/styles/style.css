@@ -22,7 +22,7 @@
   --danger: #de1451; /* Dragonfruit */
 
   --dark: #292926; /* Charcoal */
-  --light : #f2f1e9; /* Porcelain */
+  --light: #f2f1e9; /* Porcelain */
 
   /* Miscellaneous */
 
@@ -44,7 +44,7 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  height: 100%;
+  height: 200%;
   font-family: 'Noto Sans', sans-serif;
 }
 
@@ -55,7 +55,7 @@ nav {
   align-items: center;
   background-color: var(--dark);
   width: 100%;
-  height: 8%;
+  height: 10%;
   border-bottom: 3px solid var(--light);
   box-shadow: 0px 8px 16px 4px rgba(100, 100, 100, 0.5);
 }
@@ -74,7 +74,7 @@ nav {
   color: var(--accent);
   font-size: x-large;
   font-weight: bold;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .navigation-bar__brand:hover {
@@ -103,9 +103,39 @@ nav {
 }
 
 .header {
-  /* background-image: url('https://img.wallpapersafari.com/desktop/1024/576/23/54/YzyvDg.jpg'); */
+  background-image: url('../images/brand.png');
+  background-size: contain;
   width: 100vw;
   height: 61vh;
+  border-top:  .5px solid var(--dark);
+  border-bottom:  2px solid var(--dark);
+  box-shadow: 0px 8px 16px 4px rgba(100, 100, 100, 0.1);
+}
+
+.overlay {
+  width: inherit;
+  height: inherit;
+  background-color: rgba(100, 100, 100, 0.2);
+}
+
+main {
+  width: inherit;
+  height: inherit;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-content__heading {
+  font-size: 4em;
+}
+
+.main-content__blurb {
+
 }
 
 /* .subscribe-form button {
