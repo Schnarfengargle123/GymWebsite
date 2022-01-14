@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LD Fitness & Development</title>
-    <link rel="stylesheet" href="../assets/styles/about.css" />
     <link rel="stylesheet" href="../assets/styles/main.css" />
+    <link rel="stylesheet" href="../assets/styles/register.css" />
   </head>
 
   <body>
@@ -15,45 +15,47 @@
       <div class="navigation-bar">
         <a class="navigation-bar__brand" href="../index.html">LD Fitness</a>
         <ul class="navigation-bar__navigation">
-          <a class="navigation-bar__navigation__link" href="./about.html"
+          <a class="navigation-bar__navigation__link" href="/pages/about.html"
             >About</a
           >
-          <a class="navigation-bar__navigation__link" href="./plans.html"
+          <a class="navigation-bar__navigation__link" href="/pages/plans.html"
             >Plans</a
           >
-          <a class="navigation-bar__navigation__link" href="./register.html"
+          <a
+            class="navigation-bar__navigation__link"
+            href="/pages/register.html"
             >Register</a
           >
         </ul>
       </div>
     </nav>
 
-    <header>
-      <div class="header-content">
-        <div class="overlay--about">
-          <h1 class="header-content__blurb">LD Fitness</h1>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <div class="main-content">
-        <p class="main-content__blurb">
-          Welcome to <strong>LD</strong> <em>Fitness</em><br />
-          Please select from one of our halls below to find out more!
-        </p>
-
-        <div class="main-content__panel">
-          <div class="main-content__panel__image"></div>
-          <h1>Our cardio studio</h1>
+    <div class="subscribe-form__container">
+      <form action="" class="subscribe-form">
+        <div class="input-field">
+          <label for="email">Email</label>
+          <input type="email" placeholder="frank_sinatra@email.com" />
         </div>
 
-        <div class="main-content__panel">
-          <h1>Our weight studio</h1>
-          <div class="main-content__panel__image--alt"></div>
+        <div class="input-field">
+          <label for="password">Password</label>
+          <input type="password" placeholder="**********" />
         </div>
-      </div>
-    </main>
+
+        <div class="input-field">
+          <label for="password">Confirm Password</label>
+          <input type="password" placeholder="**********" />
+        </div>
+
+        <div class="input-field">
+          <label for="text">Username</label>
+          <input type="text" placeholder="Mr Bean" />
+        </div>
+
+        <!-- <button>Login</button> -->
+        <button>Register</button>
+      </form>
+    </div>
 
     <footer>
       <div class="footer">
