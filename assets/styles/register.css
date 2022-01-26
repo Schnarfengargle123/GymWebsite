@@ -53,6 +53,43 @@
     padding: 8px;
 }
 
+/* Mobile (landscape) */
+@media screen and (max-width: 480px) and (orientation: landscape) {
+    .navigation-bar__brand {
+      color: green;
+    }
+  }
+  
+  /* Mobile (portrait) */
+  
+  @media screen and (max-width: 480px) and (orientation: portrait) {
+    .navigation-bar__brand {
+      color: blue;
+    }
+  
+    .footer {
+      height: 125%;
+    }
+  
+    .footer__content {
+      flex-direction: column;
+      height: 75%;
+    }
+  }
+  
+  /* Tablet (landscape) */
+  @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+    .navigation-bar__brand {
+      color: pink;
+    }
+  }
+  
+  /* Tablet (portrait) */
+  @media screen and (max-width: 768px) and (min-width: 481px) and (orientation: portrait) {
+    .navigation-bar__brand {
+      color: purple;
+    }
+  }
 
 
  

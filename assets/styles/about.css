@@ -5,14 +5,14 @@ main {
 }
 
 .overlay--about {
-    width: inherit;
-    height: inherit;
-    background-color: rgba(117, 0, 0, 0.411);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  width: inherit;
+  height: inherit;
+  background-color: rgba(117, 0, 0, 0.411);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .header-content {
   background-image: url(../images/about_header.jpeg);
@@ -28,18 +28,26 @@ main {
 }
 
 .header-content__blurb {
-    font-size: 10rem;
-    color: var(--accent);
-    align-self: center;
+  font-size: 10rem;
+  color: var(--accent);
+  align-self: center;
 }
 
 .main-content__blurb {
-    font-size: 2.5rem;
-    text-align: center;
-    line-height: 5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 5rem;
 }
 
 .main-content__panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5% 0;
+}
+
+.main-content__panel--alt {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -64,5 +72,68 @@ main {
 }
 
 .footer {
-    margin-top: 25%;
+  margin-top: 25%;
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  .navigation-bar__brand {
+    color: blue;
+  }
+
+  main {
+    height: 200%;
+  }
+
+  .header-content__blurb {
+    font-size: 2.5rem;
+  }
+
+  .main-content__blurb {
+    font-size: 1rem;
+    line-height: 3rem;
+  }
+
+  .main-content__panel {
+    flex-direction: column-reverse;
+  }
+
+  .main-content__panel--alt {
+    flex-direction: column;
+  }
+
+  .main-content__panel__image {
+    /* width: 20rem; */
+    width: 100vw;
+    background-position: -3rem 0;
+  }
+
+  .main-content__panel__image--alt {
+    /* width: 20rem; */
+    width: 100vw;
+    background-position: -12.5rem 0;
+  }
+
+  .main-content__panel,
+  .main-content__panel--alt h1 {
+    margin-top: 20%;
+  }
+
+  .main-content__panel__image,
+  .main-content__panel__image--alt {
+    margin: 10% 0;
+  }
+}
+
+/* Tablet (landscape) */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+  .navigation-bar__brand {
+    color: pink;
+  }
+}
+
+/* Tablet (portrait) */
+@media screen and (max-width: 768px) and (min-width: 481px) and (orientation: portrait) {
+  .navigation-bar__brand {
+    color: purple;
+  }
 }

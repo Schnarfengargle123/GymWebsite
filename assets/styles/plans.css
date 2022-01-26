@@ -36,3 +36,41 @@
     background-color: var(--primary);
     color: var(--light);
 }
+
+/* Mobile (landscape) */
+@media screen and (max-width: 480px) and (orientation: landscape) {
+    .navigation-bar__brand {
+      color: green;
+    }
+  }
+  
+  /* Mobile (portrait) */
+  
+  @media screen and (max-width: 480px) and (orientation: portrait) {
+    body {
+        height: 250%;
+    }
+    
+    .navigation-bar__brand {
+      color: blue;
+    }
+
+    .subscription-cards {
+        height: 500rem;
+        flex-direction: column;
+    }
+  }
+  
+  /* Tablet (landscape) */
+  @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+    .navigation-bar__brand {
+      color: pink;
+    }
+  }
+  
+  /* Tablet (portrait) */
+  @media screen and (max-width: 768px) and (min-width: 481px) and (orientation: portrait) {
+    .navigation-bar__brand {
+      color: purple;
+    }
+  }
