@@ -15,7 +15,7 @@ main {
 }
 
 .header-content {
-  background-image: url(../images/about_header.jpeg);
+  background-image: url(../assets/images/about_header.jpeg);
   width: 100vw;
   height: 93vh;
   background-repeat: no-repeat;
@@ -58,13 +58,13 @@ main {
 .main-content__panel__image {
   width: 50rem;
   height: 33rem;
-  background-image: url(../images/about_image1.jpeg);
+  background-image: url(../assets/images/about_image1.jpeg);
 }
 
 .main-content__panel__image--alt {
   width: 50rem;
   height: 33rem;
-  background-image: url(../images/about_image2.jpeg);
+  background-image: url(../assets/images/about_image2.jpeg);
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;

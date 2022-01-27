@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LD Fitness & Development</title>
-    <link rel="stylesheet" href="../assets/styles/main.css" />
-    <link rel="stylesheet" href="../assets/styles/register.css" />
+    <link rel="stylesheet" href="..//styles/main.css" />
+    <link rel="stylesheet" href="..//styles/register.css" />
   </head>
 
   <body>
     <nav>
       <div class="navigation-bar">
         <a class="navigation-bar__brand" href="../index.html">LD Fitness</a>
-        <ul class="navigation-bar__navigation">
+        <div class="navigation-bar__navigation">
           <a class="navigation-bar__navigation__link" href="/pages/about.html"
             >About</a
           >
@@ -26,30 +26,30 @@
             href="/pages/register.html"
             >Register</a
           >
-        </ul>
+        </div>
       </div>
     </nav>
 
     <div class="subscribe-form__container">
-      <form action="" class="subscribe-form">
+      <form class="subscribe-form">
         <div class="input-field">
           <label for="email">Email</label>
-          <input type="email" placeholder="frank_sinatra@email.com" />
+          <input id="email" name="email" type="email" placeholder="frank_sinatra@email.com" />
         </div>
 
         <div class="input-field">
           <label for="password">Password</label>
-          <input type="password" placeholder="**********" />
+          <input id="password" name="password" type="password" placeholder="**********" />
         </div>
 
         <div class="input-field">
-          <label for="password">Confirm Password</label>
-          <input type="password" placeholder="**********" />
+          <label for="confirm_password">Confirm Password</label>
+          <input id="confirm_password" name="confirm_password" type="password" placeholder="**********" />
         </div>
 
         <div class="input-field">
-          <label for="text">Username</label>
-          <input type="text" placeholder="Mr Bean" />
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" placeholder="Mr Bean" />
         </div>
 
         <!-- <button>Login</button> -->

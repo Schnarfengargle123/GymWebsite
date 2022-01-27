@@ -113,7 +113,7 @@ nav {
   border-bottom:  2px solid var(--dark);
   box-shadow: 0px 8px 16px 4px rgba(100, 100, 100, 0.1);
 
-  background-image: url('../images/index_header.jpg');
+  background-image: url('../assets/images/index_header.jpg');
   background-position: 0 45%;
   height: 70vh;
 
