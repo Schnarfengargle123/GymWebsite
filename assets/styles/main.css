@@ -248,6 +248,12 @@ nav {
     color: var(--accent);
   }
 
+  .footer__brand:hover {
+    background-color: var(--danger);
+    color: var(--light);
+    border-radius: 2px;
+  }
+
   .footer__content {
     flex-direction: column;
     height: 75%;
