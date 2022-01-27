@@ -193,6 +193,12 @@ nav {
   padding: 0.5rem;
 }
 
+.footer__brand:hover {
+  background-color: var(--danger);
+  color: var(--light);
+  border-radius: 2px;
+}
+
 .footer__navigation {
   display: flex;
   flex-direction: column;
@@ -242,16 +248,6 @@ nav {
 
   .footer {
     height: 125%;
-  }
-
-  .footer__brand {
-    color: var(--accent);
-  }
-
-  .footer__brand:hover {
-    background-color: var(--danger);
-    color: var(--light);
-    border-radius: 2px;
   }
 
   .footer__content {
