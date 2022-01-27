@@ -17,6 +17,7 @@
   --primary: #19a87b; /* Borealis */
   --secondary: #669ced; /* Boysclub */
   --accent: #f55e56; /* Persimmon */
+  --accent2: #f7b5bc; /* Bubblegum */
 
   --success: #4ff7a6; /* Verdant */
   --danger: #de1451; /* Dragonfruit */
@@ -70,7 +71,9 @@ nav {
 }
 
 .navigation-bar__brand {
-  color: var(--accent);
+  color: pink;
+  color: var(--accent2);
+
   font-size: x-large;
   font-weight: bold;
   padding: 0.5rem;
@@ -102,13 +105,18 @@ nav {
 }
 
 .header {
-  background-image: url('../images/brand.png');
-  background-size: contain;
+  /* background-image: url('../images/brand.png'); */
+  background-size: cover;
   width: 100vw;
   height: 61vh;
   border-top:  .5px solid var(--dark);
   border-bottom:  2px solid var(--dark);
   box-shadow: 0px 8px 16px 4px rgba(100, 100, 100, 0.1);
+
+  background-image: url('../images/index_header.jpg');
+  background-position: 0 45%;
+  height: 70vh;
+
 }
 
 .overlay {
@@ -178,6 +186,13 @@ nav {
   height: 8rem;
 }
 
+.footer__brand {
+  color: var(--accent);
+  font-size: x-large;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
 .footer__navigation {
   display: flex;
   flex-direction: column;
@@ -206,11 +221,31 @@ nav {
 
 @media screen and (max-width: 480px) and (orientation: portrait) {
   .navigation-bar__brand {
+    font-size: large;
     color: blue;
+  }
+
+  .navigation-bar__navigation {
+    width: 60%;
+  }
+
+  .navigation-bar__navigation__link {
+    font-size: small;
+  }
+
+  .header {
+    background-position: 50% 0;
+    height: 19rem;
+    background-size: contain;
+    background-size: 175%;
   }
 
   .footer {
     height: 125%;
+  }
+
+  .footer__brand {
+    color: var(--accent);
   }
 
   .footer__content {
@@ -224,11 +259,19 @@ nav {
   .navigation-bar__brand {
     color: pink;
   }
+
+  .header {
+    background-position: 100% 0;
+  }
 }
 
 /* Tablet (portrait) */
 @media screen and (max-width: 768px) and (min-width: 481px) and (orientation: portrait) {
   .navigation-bar__brand {
     color: purple;
+  }
+
+  .header {
+    background-position: 100% 0;
   }
 }

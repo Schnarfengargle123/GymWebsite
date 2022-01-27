@@ -59,6 +59,10 @@
         height: 500rem;
         flex-direction: column;
     }
+
+    .subscription-cards__card {
+      width: 85%;
+  }
   }
   
   /* Tablet (landscape) */
@@ -66,11 +70,24 @@
     .navigation-bar__brand {
       color: pink;
     }
+
+    .subscription-cards {
+        width: 100vw;
+    }
+
+    .subscription-cards__card {
+        width: 10rem;
+    }
   }
   
   /* Tablet (portrait) */
-  @media screen and (max-width: 768px) and (min-width: 481px) and (orientation: portrait) {
+  @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
     .navigation-bar__brand {
       color: purple;
+    }
+
+    .subscription-cards {
+        width: 100vw;
+        background-color: green;
     }
   }

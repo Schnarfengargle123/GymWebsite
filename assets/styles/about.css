@@ -126,14 +126,44 @@ main {
 
 /* Tablet (landscape) */
 @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+  main {
+    height: 200%;
+  }
+
   .navigation-bar__brand {
     color: pink;
   }
-}
 
-/* Tablet (portrait) */
-@media screen and (max-width: 768px) and (min-width: 481px) and (orientation: portrait) {
-  .navigation-bar__brand {
-    color: purple;
+  .main-content__panel,
+  .main-content__panel--alt {
+    margin-top: 20%;
+  }
+
+  .main-content__panel h1,
+  .main-content__panel--alt h1 {
+    margin: 0 5%;
+    text-align: center;
+  }
+
+  .main-content__panel__image,
+  .main-content__panel__image--alt {
+    margin: 0 5%;
+  }
+
+  .main-content__panel__image {
+    width: 120%;
+    background-position: -2.5rem 0;
+  }
+
+  .main-content__panel__image--alt {
+    width: 120%;
+    background-position: -7rem 0;
+  }
+
+  /* Tablet (portrait) */
+  @media screen and (max-width: 768px) and (min-width: 481px) and (orientation: portrait) {
+    .navigation-bar__brand {
+      color: purple;
+    }
   }
 }

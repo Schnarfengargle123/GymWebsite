@@ -66,14 +66,9 @@
     .navigation-bar__brand {
       color: blue;
     }
-  
-    .footer {
-      height: 125%;
-    }
-  
-    .footer__content {
-      flex-direction: column;
-      height: 75%;
+
+    .subscribe-form {
+        width: 86%;
     }
   }
   
@@ -82,6 +77,10 @@
     .navigation-bar__brand {
       color: pink;
     }
+
+    .subscribe-form {
+      width: 65%;
+  }
   }
   
   /* Tablet (portrait) */
